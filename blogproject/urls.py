@@ -41,7 +41,7 @@ urlpatterns = [
     path('create_comment/<int:blog_id>', views.create_comment, name='create_comment'),
 
     path('login/', accounts_views.login, name='login'),
-    path('logout/', accounts_views.logout, name='logout '),
+    path('logout/', accounts_views.logout, name='logout'),
 ] 
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
